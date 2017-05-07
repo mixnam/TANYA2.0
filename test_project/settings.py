@@ -26,7 +26,8 @@ SECRET_KEY = '=ty$^@5c8omf@ulm$5*ui!we6u%a2fo6uc2+hq@f&amod()l8l'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'mixnam.pythonanywhere.com'
+    'mixnam.pythonanywhere.com',
+    '127.0.0.1'
 ]
 
 

@@ -4,7 +4,7 @@
 
 {% block content %}
     <div class="section-top">
-        <img src="{% static 'img/slider0.jpg' %}" class="img-responsive">
+        <img src="{% static 'img/slider.jpg' %}" class="img-responsive">
     </div>
     <div class="section section1">
         <div class="container">
@@ -22,37 +22,64 @@
     </div>
     <div class="section section-delivery">
         <div>
-            <h3>Free shipping</h3>
+            <h3>Это лучший магазин в мире !</h3>
         </div>
     </div>
+
     <div class="section section2 phones-container">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="text-center">
-                        Телефоны
+                        Категории
                     </h1>
                 </div>
-                {% for product_image in products_images_phones %}
-                    {% include 'landing/product_item.html' %}
-                {% endfor %}
-
+                <div class="col-lg-3">
+                    <div class="product-item">
+                        <h4>Ботинки</h4>
+                        <a href="{% url 'boots' %}">
+                            <img src="{% static 'img/boots.jpg' %}" class="img-responsive">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-item">
+                        <h4>Кросовки</h4>
+                        <a href="{% url 'snikers' %}">
+                            <img src="{% static 'img/snikers.jpg' %}" class="img-responsive">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-item">
+                        <h4>Футболки</h4>
+                        <a href="{% url 't-shirt' %}">
+                            <img src="{% static 'img/t-shirt.jpg' %}" class="img-responsive">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-item">
+                        <h4>Куртки</h4>
+                        <a href="{% url 'jackets' %}">
+                            <img src="{% static 'img/jackets.jpg' %}" class="img-responsive">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="section section3 laptops-container">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="text-center">
-                        Ноутбуки
-                    </h1>
+                <div class="col-lg-3 col-lg-offset-4">
+                    <div class="product-item">
+                        <h4>Штаны</h4>
+                        <a href="{% url 'pants' %}">
+                            <img src="{% static 'img/pants.jpg' %}" class="img-responsive">
+                        </a>
+                    </div>
                 </div>
-                {% for product_image in products_images_laptops %}
-                    {% include 'landing/product_item.html' %}
-                {% endfor %}
-
             </div>
         </div>
     </div>
+
 {% endblock %}

@@ -62,7 +62,7 @@ html, body{
 .discount-container{
     position: absolute;
     top: 30%;
-    background: #55e073;
+    background: darkcyan;
     width: 30%;
     color: white;
     font-weight: 700;
@@ -71,7 +71,7 @@ html, body{
 
 .section-delivery{
     height: 300px;
-    background-color: darkseagreen;
+    background-color: silver;
     text-align: center;
     color: white;
 }
@@ -84,13 +84,13 @@ html, body{
 .navbar-top{
     min-height: 10px;
     height: 20px;
-    background-color: green;
+    background-color: gray;
     border: none;
     border-radius: 0;
 }
 
 .navbar-main{
-    background-color: #55e073;
+    background-color: lightgrey;
     border: none;
     border-radius: 0;
 }
@@ -105,7 +105,7 @@ html, body{
     position: absolute;
     top: 50px;
     width: 100%;
-    background-color: #55e093;
+    background-color: gray;
     z-index: 10;
     padding: 10px;
 }

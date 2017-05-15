@@ -19,5 +19,10 @@ from products import views
 
 urlpatterns = [
     # url(r'^landing123/', views.landing, name='landing'),
+    url(r'^boots/', views.boots, name='boots'),
+    url(r'^snikers/', views.snikers, name='snikers'),
+    url(r'^t-shirt/', views.t_shirt, name='t-shirt'),
+    url(r'^jackets/', views.jackets, name='jackets'),
+    url(r'^pants/', views.pants, name='pants'),
     url(r'^product/(?P<product_id>\w+)/$', views.product, name='product'),
 ]
